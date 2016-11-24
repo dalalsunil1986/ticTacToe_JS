@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Tic tac toe</title>
+    <style>
+      .Square {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 19pt;
+        font-weight: bold;
+        font-family: Verdana;
+      }
+    </style>
+  </head>
+  <body onload="startGame();">
+    <h1>Welcome to my tic tac toe game</h1>
+    <div id="message">Messages will go here.</div>
+    <table border="1">
+      <tr>
+        <td id="s1" class="Square" onclick="nextMove(this);"></td>
+        <td id="s2" class="Square" onclick="nextMove(this);"></td>
+        <td id="s3" class="Square" onclick="nextMove(this);"></td>
+      </tr>
+      <tr>
+        <td id="s4" class="Square" onclick="nextMove(this);"></td>
+        <td id="s5" class="Square" onclick="nextMove(this);"></td>
+        <td id="s6" class="Square" onclick="nextMove(this);"></td>
+      </tr>
+      <tr>
+        <td id="s7" class="Square" onclick="nextMove(this);"></td>
+        <td id="s8" class="Square" onclick="nextMove(this);"></td>
+        <td id="s9" class="Square" onclick="nextMove(this);"></td>
+      </tr>
+
+    </table>
+    <a href="javascript: startGame();">Start Over</a>
+    <script src="tic.js"></script>
+  </body>
+</html>
